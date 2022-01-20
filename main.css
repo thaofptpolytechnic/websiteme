@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  /* line-height: 1.6;
+    scroll-behavior: smooth; */
+}
+
+.web {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* #header{
+
+    width: 100%;
+    background-color: yellow;
+    height: 90px;
+  
+
+} */
+
+nav {
+  float: left;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+}
+
+nav .menu .menu_1 li {
+  display: inline-block;
+  /* list-style: none;
+  position: relative; */
+}
+
+nav .menu_1 li a {
+  line-height: 70px;
+  padding: 0 30px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#nameweb {
+  font-weight: 800;
+  color: rgb(10, 87, 11);
+  font-size: 15pt;
+}
+nav .menu_2 > li:hover a,
+nav .menu_1 > li:hover > a {
+  color: #000;
+}
+
+.menu_1 li:hover > ul {
+  display: block;
+}
+
+nav .menu_2 {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*mobile*/
+
+nav .menu_mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: rgba(156, 28, 28, 0.2);
+  transform: translateX(-100%);
+}
+
+nav .menu_mobile1 {
+  margin-top: 25px;
+}
+
+nav .menu_mobile1 li a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+nav .menu_mobile1 > li:hover a,
+nav .menu_mobile2 > li:hover > a {
+  color: rgb(22, 204, 37);
+}
+
+nav .menu_mobile1 li:hover > ul {
+  display: block;
+}
+
+nav .menu_mobile2 {
+  display: none;
+}
+/* 
+nav .search {
+  line-height: 70px;
+  padding-left: 10px;
+} */
+
+nav .bar {
+  float: left;
+  line-height: 70px;
+  font-size: 50px;
+  /* margin-left: -70px; */
+  display: none;
+}
+
+nav .close {
+  color: #fff;
+  float: right;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+}
+
+nav .bar_input {
+  display: none;
+}
+
+nav .bar_input:checked ~ .menu_mobile {
+  transform: translateX(0%);
+}
+
+/*end mobile */
+
+.main {
+  float: left;
+  width: 100%;
+  background-color: rgb(255, 121, 115);
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#trangchu,
+#gioithieu,
+#vanhoa,
+#amthuc,
+#trochoi,
+#gopy,
+#lienhe {
+  float: left;
+  width: 100%;
+  height: 750px;
+}
+
+.box {
+  margin-top: 75px;
+  height: 665px;
+  border-radius: 40px;
+}
+
+.name {
+  float: left;
+  text-align: left;
+  margin-left: 350px;
+  text-transform: uppercase;
+}
+
+/*css vao trong nay - box */
+
+.home {
+  background-image: url(images/trangchu.jpg);
+  background-size: 100%;
+}
+.about {
+  background-color: rgb(214, 166, 166);
+}
+
+.cultural {
+  background-color: rgb(132, 93, 196);
+}
+
+.food {
+  background-color: rgb(228, 120, 69);
+}
+
+.play {
+  background-color: rgb(47, 114, 20);
+}
+
+.feedback {
+  background-image: url(images/feedback.jpg);
+  background-size: 1280px 678px;
+  text-align: center;
+  padding-top: 70px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.contact {
+  background-color: rgb(156, 182, 114);
+}
+
+.boxcenter {
+  width: 90%;
+  min-height: 645px;
+  margin: 0 auto;
+  padding-top: 20px;
+  /* border: 1px solid #000; */
+}
+
+/* phan trang chu */
+
+.boxtop {
+  float: left;
+  width: 50%;
+  /* border: 1px solid pink; */
+  /* border-radius: 20px;
+    box-shadow: 0 0 100px #ddec04; */
+  height: 300px;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+.boxbottum {
+  float: left;
+  width: 15%;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 500px;
+  border-radius: 20px;
+  background-color: rgb(255, 121, 115);
+}
+
+.boxbottum a {
+  font-size: 25px;
+  text-decoration: none;
+  padding-left: 30px;
+  color: #fff;
+}
+
+.boxbottum a:hover {
+  color: #ff1010;
+}
+
+.boxtop > p {
+  margin: 5px;
+  font-size: 19pt;
+  font-style: italic;
+  text-align: justify;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.boxtop > h2 {
+  text-align: center;
+  color: #ff1010;
+}
+
+.boxleft {
+  float: left;
+  width: 49%;
+  /* border: 1px solid pink; */
+  height: 630px;
+}
+
+.boxright {
+  float: right;
+  width: 49%;
+  /* border: 1px solid pink; */
+  height: 630px;
+}
+
+.images {
+  float: left;
+  height: 170px;
+  width: 45%;
+  margin: 20px;
+  background-size: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(206, 209, 28);
+  clear: both;
+}
+
+.txt {
+  float: right;
+  min-height: 170px;
+  width: 45%;
+  margin-top: 20px;
+  margin-right: 7px;
+  padding: 5px;
+  background-size: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(206, 209, 28);
+  text-align: justify;
+}
+
+#vanhoa .anh1 {
+  background-image: url(images/vanhoa/anh1.jpg);
+}
+#vanhoa .anh2 {
+  background-image: url(images/vanhoa/anh2.jpg);
+}
+#vanhoa .anh3 {
+  background-image: url(images/vanhoa/anh3.webp);
+}
+#vanhoa .anh4 {
+  background-image: url(images/vanhoa/anh4.jpg);
+}
+#vanhoa .anh5 {
+  background-image: url(images/vanhoa/anh5.jpg);
+}
+#vanhoa .anh6 {
+  background-image: url(images/vanhoa/anh6.jpg);
+}
+
+#amthuc .anh1 {
+  background-image: url(images/amthuc/anh1.jpg);
+}
+#amthuc .anh2 {
+  background-image: url(images/amthuc/anh2.jpg);
+}
+#amthuc .anh3 {
+  background-image: url(images/amthuc/anh3.jpg);
+}
+#amthuc .anh4 {
+  background-image: url(images/amthuc/anh4.png);
+}
+#amthuc .anh5 {
+  background-image: url(images/amthuc/anh5.jpg);
+}
+#amthuc .anh6 {
+  background-image: url(images/amthuc/anh6.jpg);
+}
+
+#trochoi .anh1 {
+  background-image: url(images/trochoi/choiga.jpg);
+}
+#trochoi .anh2 {
+  background-image: url(images/trochoi/danhdu.jpg);
+}
+#trochoi .anh3 {
+  background-image: url(images/trochoi/nemcon.jpg);
+}
+#trochoi .anh4 {
+  background-image: url(images/trochoi/dapnieu.jpg);
+}
+#trochoi .anh5 {
+  background-image: url(images/trochoi/conguoi.jpeg);
+}
+#trochoi .anh6 {
+  background-image: url(images/trochoi/dauvat.jpg);
+}
+
+#footer {
+  float: left;
+  width: 100%;
+  height: 50px;
+  background-color: brown;
+  background-color: rgba(0, 0, 0, 0.2);
+  clear: both;
+}
+
+#footer > p {
+  font-style: italic;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* responsive */
+@media only screen and (max-width: 1023px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+  nav .search,
+  .menu {
+    display: none;
+  }
+
+  nav .bar {
+    display: block;
+  }
+}
